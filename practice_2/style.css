@@ -1,0 +1,40 @@
+.content_box {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 423px;
+    height: 457px;
+    margin: auto;
+    padding: 15px;
+    background: #f0f0f0;
+}
+
+.content_box h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.content_box label {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.content_box select,
+.content_box input,
+.content_box textarea,
+.content_box button {
+    display: block;
+    box-sizing: border-box;
+    line-height: 1.2;
+    width: 100%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 0px;
+    padding: 1% 4%;
+    font-size: 16px;
+}
