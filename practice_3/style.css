@@ -1,0 +1,28 @@
+table {
+    display: table;
+    border-collapse: separate;
+    border: 1px solid #333;
+    table-layout: fixed;
+}
+
+tr {
+    display: table-row;
+}
+
+td, th {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #333;
+    padding: 5px 20px;
+    color: black
+}
+
+th {
+    vertical-align: center;
+}
+
+td:not([rowspan]) {
+  text-align: left;
+  vertical-align: center;
+}
