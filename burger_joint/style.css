@@ -1,0 +1,288 @@
+/* * {
+    border: 1px solid black;
+} */
+
+header,
+main,
+footer {
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    width: 1600px;
+    height: 900px;
+    /* box-sizing: border-box; */
+}
+
+header {
+    grid-template-rows: 1fr 10fr;
+    background: linear-gradient(180deg, rgba(237, 164, 24, 1) 47%,rgba(237, 164, 24, 0) 100%);
+}
+
+main {
+    background: white;
+}
+
+footer {
+    /* Каркас */
+    width: 1600px;
+    height: 450px;
+    background: linear-gradient(180.00deg, rgba(217, 217, 217, 0),rgba(237, 166, 29, 1) 100%);
+}
+
+div {
+    height: 100%;
+}
+
+.navi_content {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    padding: 110px 130px 0px 130px;
+}
+
+.navi_content > div {
+    height: 75px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;    /* элементы в колонку */
+    align-items: center;
+    gap: 15px;                 /* расстояние между элементами */
+}
+
+.logo p {
+    font-family: Montserrat;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.logo > p:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    /* Rectangle 3 */
+    width: 50px;
+    height: 57px;
+    border-radius: 10px;
+    /* background: rgba(49, 38, 38, 1); */
+    background-image: url("images/logo_rectangle.svg");
+    background-position-y: 3px;
+    background-repeat: no-repeat;
+}
+
+.logo > p:nth-child(2) {
+    color: black;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.navigator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navigator input {
+    display: none;
+}
+
+.navigator label {
+    display: inline-grid;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    color: rgba(0, 0, 0, 1);
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navigator input:checked + .navi_group {
+    color: rgba(0, 0, 0, 1);
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.basket {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.basket_circle {
+    /* Ellipse 1 */
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(49, 38, 38, 1);
+    background-image: url("images/basket_vector.svg");
+    background-position: 43% 51%;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.main_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 130px 0px 130px;
+}
+
+.order_note {
+    display: flex;
+    flex-direction: column;    /* элементы в колонку */
+    justify-content: center;   /* центрирование по вертикали */
+    gap: 15px;                 /* расстояние между элементами */
+}
+
+.order_note p,
+.order_note button {
+    color: rgba(0, 0, 0, 1);
+    font-family: Montserrat;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+.order_note p:nth-child(1) {
+    /* Быстрая доставка для Вас */
+    width: 572px;
+    height: 63px;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.order_note p:nth-child(2) {
+    /* Сделай первый заказ и получи скидку 50% */
+    width: 497px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.order_note button {
+    /* Кнопка "Заказать" */
+    width: 180.86px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #E62626;
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dishes_box {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(2, 3fr);
+}
+
+main > h1 {
+    color: rgba(0, 0, 0, 1);
+    font-family: Montserrat;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: auto;
+}
+
+.dishes_box figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.dishes_box figcaption {
+    color: rgba(0, 0, 0, 1);
+    font-family: Montserrat;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.footer_box {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.important_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.important_links > a {
+    margin-top: 170px;
+    margin-bottom: auto;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+
+.important_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0px;
+    color: rgba(0, 0, 0, 1);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.important_info p {
+    margin: 5px;
+}
+
+.messengers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.vk {
+    /* VK Circled */
+    background-image: url("images/VK Circled.png");
+    background-size: 50px 50px;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+}
+
+.tg {
+    /* Telegram */
+    background-image: url("images/Telegram.png");
+    background-size: 60px 60px;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+}
