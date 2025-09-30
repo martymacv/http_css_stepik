@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main_page.css" type="text/css">
+    <link rel="stylesheet" href="css/footer_page_part.css" type="text/css">
+    <link rel="stylesheet" href="css/main_header_page_part.css" type="text/css">
+    <link rel="stylesheet" href="css/main_page_mainer_part.css" type="text/css">
+    <link rel="stylesheet" href="css/menu_list_main_header.css" type="text/css">
+    <link rel="stylesheet" href="css/feed_flyer.css" type="text/css">
+    <title>Главная</title>
+    <script>
+        fetch('tempates/footer.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('footer').innerHTML = data);
+        fetch('tempates/main_header.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('header').innerHTML = data);
+        fetch('tempates/main_mainer.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('main').innerHTML = data);
+        fetch('tempates/menu_list_main_header.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('div.menu_list').innerHTML = data);
+        fetch('tempates/feed_flyer.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('header div.feed-flyer').innerHTML = data);
+    </script>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <!-- <frame>
+        </frame> -->
+    </main>
+    
+    <footer></footer>
+</body>
+</html>

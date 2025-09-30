@@ -1,0 +1,54 @@
+div.navigator {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 5fr) 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: auto 25cqw auto 20cqw;
+}
+
+div.navigator * {
+    margin: auto;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+div.navigator > div > label.feed-point {
+    display: block;
+    cursor: pointer;
+    /* padding: 7px 7px 7px 7px; */
+    height: 7px;
+    width: 7px;
+    border-radius: 3.5px;
+    background-color: #ffffff80;
+    transition: all 0.1s ease;
+}
+
+div.navigator > div > label.feed-point:hover {
+    box-shadow: 0 10px 12px -5px rgba(0, 0, 0, 1),
+                0 5px 5px -5px rgba(0, 0, 0, 0.4);
+    /* transform: translateY(-1px); */
+}
+
+div.navigator > div > input:checked  + label.feed-point{
+    background-color: #ffffffff;
+}
+
+div.prev-feed-page,
+div.next-feed-page {
+    transform: scaleX(0.4);
+    color: #ffffff80;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+div.prev-feed-page:hover,
+div.next-feed-page:hover {
+    cursor: pointer;
+    color: #ffffffff;
+    font-weight: bolder;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2),
+                 1px 1px 2px rgba(0, 0, 0, 0.1);
+    /* transform: translateY(-0.5px); */
+}

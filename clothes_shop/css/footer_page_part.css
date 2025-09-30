@@ -1,0 +1,162 @@
+div.footer-box {
+    display: grid;
+    grid-template-rows: 459px 40px;
+    grid-template-areas:
+        "page-footer-info"
+        "page-footer-contacts";
+    gap: 157px;
+    margin: 61px 260px 61px 270px;
+}
+
+@media (max-width: 960px) {
+    div.footer-box {
+        margin: 61px 130px 61px 135px;
+    }
+}
+
+div.footer-box > div.page-footer-info {
+    grid-area: page-footer-info;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+}
+
+
+div.footer-box > div.page-footer-info > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 16px;
+    gap: 1.2em;
+    margin: 0px auto auto 0px;
+}
+
+div.footer-box > div.page-footer-info > div a {
+    text-decoration: none;
+    margin: 0px;
+    color: rgba(0, 0, 0, 1);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+div.footer-box > div.page-footer-info > div p.title {
+    margin: 0px;
+    color: rgba(0, 0, 0, 1);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+div.footer-box > div.page-footer-contacts {
+    grid-area: page-footer-contacts;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+div.footer-box > div.page-footer-contacts > div {
+    display: flex;
+    /* justify-content: left; */
+    flex-direction: row;
+    /* gap: 1em; */
+}
+
+div.footer-box > div.page-footer-contacts > div:not(div:nth-child(1)) {
+    justify-content: center;    
+}
+
+div.footer-box > div.page-footer-contacts > div a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+    margin-right: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+div.footer-box > div.page-footer-info > div a {
+    transition: all 0.05s ease;
+}
+
+div.footer-box > div.page-footer-info > div a:hover {
+    font-weight: bolder;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2),
+                 1px 1px 2px rgba(0, 0, 0, 0.1);
+    transform: translateY(-0.5px);
+}
+
+div.footer-box > div.page-footer-contacts > div a {
+    transition: all 0.1s ease;
+}
+
+div.footer-box > div.page-footer-contacts > div a:hover {
+    border-radius: 10px;
+    box-shadow: 0 10px 12px -5px rgba(0, 0, 0, 1),
+                0 5px 5px -5px rgba(0, 0, 0, 0.4);
+    transform: translateY(-1px);
+    /* background-color: rgba(242, 242, 242, 0.5); */
+    /* padding: 1px; */
+}
+
+div.footer-box > div.page-footer-contacts > div > a.telegram {
+    background-image: url("images/footer/Telegram App.png");
+}
+
+div.footer-box > div.page-footer-contacts > div > a.vkontakte {
+    background-image: url("images/footer/VK\ Circled.png");
+}
+
+div.footer-box > div.page-footer-contacts > div > a.instagram {
+    background-image: url("images/footer/Instagram.png");
+}
+
+div.footer-box > div.page-footer-contacts > div:not(div:nth-child(1)) a {
+    width: 40px;
+    height: 40px;
+    margin-right: 0px;
+}
+
+div.footer-box > div.page-footer-contacts > div > a.app-store {
+    background-image: url("images/footer/Apple\ Logo.png");
+}
+
+div.footer-box > div.page-footer-contacts > div > a.google-play {
+    background-image: url("images/footer/Google\ Play.png");
+}
+
+div.footer-box > div.page-footer-contacts > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4em;
+}
+
+div.footer-box > div.page-footer-contacts > div > div p:first-child {
+    color: rgba(0, 0, 0, 1);
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+div.footer-box > div.page-footer-contacts > div > div p:last-child {
+    color: rgba(0, 0, 0, 1);
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+}

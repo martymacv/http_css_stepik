@@ -1,0 +1,151 @@
+div.media-photos {
+    margin-left: 270px;
+    margin-right: 123.65px;
+}
+
+div.photo-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 69px;
+    gap: 5px;
+}
+
+div.photo-box > img {
+    max-width: 100%;
+    min-width: 0%;
+    height: auto;
+}
+
+div.notes-by-brand {
+    margin-left: 247px;
+    margin-right: 123.65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 103px;
+    gap: 30px;
+}
+
+div.notes-by-brand > p {
+    color: rgba(0, 0, 0, 1);
+    font-family: Khula, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+
+div.notes-by-brand > p a {
+    color: rgba(0, 0, 0, 0.33);
+    text-decoration: none;
+    letter-spacing: 0.1em;
+}
+
+div.notes-by-brand > p.title {
+    max-width: 977px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0em;
+}
+
+div.notes-by-brand > p:not(p.title) {
+    max-width: 793px;
+}
+
+div.subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+    margin-top: 129px;
+    margin-left: 270px;
+    margin-right: 123.65px;
+    max-width: 1047px;
+    height: 418px;
+    background: rgba(203, 203, 203, 0.2);
+}
+
+div.subscribe > p:nth-child(1) {
+    color: rgba(0, 0, 0, 1);
+    font-family: Roboto, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+div.subscribe > p:nth-child(2) {
+    color: rgba(0, 0, 0, 1);
+    font-family: Khula, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+div.subscribe > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 94px;
+}
+
+@media (max-width: 960px) {
+    div.subscribe > div {
+        justify-content: center;
+        gap: 2px;
+    }
+    div.subscribe,
+    div.media-photos {
+        margin-left: 135px;
+        margin-right: 62px;
+    }
+    div.notes-by-brand {
+        margin-left: 124px;
+        margin-right: 62px;
+    }
+}
+
+div.subscribe > div > input {
+    width: 200px;
+    height: 65px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.29);
+    background: rgba(245, 245, 245, 1);
+    color: rgba(0, 0, 0, 0.64);
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+div.subscribe > div > button {
+    width: 200px;
+    height: 65px;
+    background: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+div.subscribe > p:nth-child(4) {
+    color: rgba(130, 130, 130, 1);
+    font-family: Roboto, sans-serif;
+    font-size: 8px;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}

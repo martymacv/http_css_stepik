@@ -1,0 +1,186 @@
+div.main-page-header-box {
+    display: grid;
+    grid-template-columns: auto 70px;
+    grid-template-areas:
+        "main-page-header-base main-page-header-control-btn";
+}
+
+p.brand-name {
+    display: flex;
+    color: rgba(255, 255, 255, 1);
+    font-family: Megrim, sans-serif;
+    font-size: 128px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    align-items: center;
+    justify-content: left;
+    margin-left: 12px;
+    width: 344px;
+    height: 140px;
+}
+
+div.main-page-header-box > div:nth-child(1) {
+    grid-area: main-page-header-base;
+    max-width: 1370px;
+    height: 800px;
+    background-image: url("images/main_page_header/Главное\ фото.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+div.content-gridbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas:
+        "col1-row1 col2-row1"
+        "col1-row2 col2-row2";
+    container-type: inline-size;
+}
+
+div.content-gridbox > div:nth-child(1) {
+    grid-area: col1-row1;
+    margin-left: 70px;
+    display: flex;
+}
+
+div.content-gridbox > div:nth-child(1) > div.menu {
+    cursor: pointer;
+    z-index: 3;
+    margin-top: 22px;
+    width: 30px;
+    height: 30px;
+    background-image: url("images/main_page_header/Иконка-Выдвижное\ меню.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+}
+
+div.menu_list {
+    visibility: hidden;
+    opacity: 0;
+    margin-top: -22px;
+    margin-left: -22px;
+    background: rgba(242, 242, 242, 0.75);
+    width: 0px;
+    height: 0px;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+div.content-gridbox > div:nth-child(1) > div.menu:hover div.menu_list {
+    visibility: visible;
+    opacity: 1;
+    width: 900px;
+    height: 800px;
+}
+
+div.menu_list:hover {
+    visibility: visible;
+    opacity: 1;
+    width: 900px;
+    height: 800px;
+}
+
+
+div.content-gridbox > div:nth-child(2) {
+    grid-area: col2-row1;
+    display: grid;
+    justify-content: flex-end;
+    align-content: flex-start;
+}
+
+div.content-gridbox > div:nth-child(2) > div.denim {
+    transform: rotate(90.00deg);
+    transform-origin: 0% 0%;
+    color: rgba(216, 216, 216, 0.6);
+    font-family: Roboto, sans-serif;
+    font-size: 180px;
+    font-weight: 250;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 30px;
+    width: 125px;
+}
+
+
+div.main-page-header-box > div:nth-child(2) {
+    grid-area: main-page-header-control-btn;
+    width: 70px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 46px;
+}
+
+div.main-page-header-box > div:nth-child(2) > a {
+    margin: 0px;
+    transition: all 0.1s ease;
+}
+
+div.main-page-header-box > div:nth-child(2) > a:hover {
+    border-radius: 8px;
+    box-shadow: 0 10px 12px -5px rgba(0, 0, 0, 1),
+                0 5px 5px -5px rgba(0, 0, 0, 0.4);
+    transform: translateY(-1px);
+}
+
+div.main-page-header-box > div:nth-child(2) > a:nth-child(1) {
+    margin-top: 22px;
+    width: 30px;
+    height: 30px;
+    background-image: url("images/main_page_header/Иконка-Корзина.png");
+}
+
+div.main-page-header-box > div:nth-child(2) > a:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    background-image: url("images/main_page_header/Иконка-Профиля.png");
+}
+
+div.main-page-header-box > div:nth-child(2) > a:nth-child(3) {
+    width: 22px;
+    height: 22px;
+    background-image: url("images/main_page_header/Иконка-Лайк.png");
+}
+
+div.main-page-header-box > div:nth-child(2) > a:nth-child(4) {
+    width: 25px;
+    height: 25px;
+    background-image: url("images/main_page_header/Иконка-Поиск.png");
+}
+
+div.content-gridbox > div:nth-child(3) {
+    grid-area: col1-row2;
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    position: relative;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    justify-content: center;
+    align-content: center;
+    container-type: inline-size;
+}
+
+div.content-gridbox > div:nth-child(3) > div:nth-child(1) > p {
+    /* position: absolute; */
+    margin-left: 70px;
+    margin-top: 1em;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Roboto, sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+div.feed-flyer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    container-type: inline-size;
+}
