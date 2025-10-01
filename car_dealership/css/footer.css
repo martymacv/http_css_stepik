@@ -1,0 +1,36 @@
+footer {
+    position: relative;
+    display: grid;
+    grid-template-rows: 15fr 10fr;
+    gap: 40px;
+    justify-content: center;
+    max-width: 1440px;
+    height: 332px;
+}
+
+footer p {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: rgba(255, 255, 255, 1);
+    font-family: Ruda, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 200%;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
+div.links {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+div.links > img {
+    width: 65px;
+    height: 65px;
+}
