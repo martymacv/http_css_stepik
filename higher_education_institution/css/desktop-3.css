@@ -1,0 +1,109 @@
+div.desktop-3 {
+    width: 1440px;
+    height: 940px;
+    background: rgba(255, 255, 255, 1);
+    display: grid;
+    grid-template-columns: 11fr 60fr 60fr;
+    grid-template-rows: 20fr 52fr 52fr;
+}
+
+div.desktop-3 > h1 {
+    grid-row: 1;
+    grid-column: 2;
+    align-self: center;
+    color: rgba(1, 60, 211, 1);
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 1.5em;
+}
+
+div.desktop-3 > div.study-info {
+    width: 495px;
+    height: 250px;
+    border-radius: 10px;
+    background: rgba(233, 233, 233, 1);
+}
+
+div.desktop-3 > div.study-info:nth-child(2) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+div.desktop-3 > div.study-info:nth-child(3) {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+div.desktop-3 > div.study-info:nth-child(4) {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+div.desktop-3 > div.study-info:nth-child(5) {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+div.desktop-3 > div.study-info {
+    display: grid;
+    grid-template-columns: 10fr 92fr 18fr;
+    grid-template-rows: 10fr 26fr 94fr;
+}
+
+div.desktop-3 img {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+}
+
+div.desktop-3 > div.study-info > div.circle {
+    cursor: pointer;
+    background: rgba(166, 0, 0, 1);
+    grid-column: 3;
+    grid-row: 2;
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white
+}
+
+div.desktop-3 > div.study-info:nth-child(n+2) > div.circle {
+    background: rgba(255, 255, 255, 1);
+    color: black;
+}
+
+div.desktop-3 > div.study-info > div.text-box {
+    grid-column: 2;
+    grid-row: 3;
+    display: block;
+}
+
+div.desktop-3 > div.study-info > div.text-box > p:first-child {
+    color: rgba(3, 0, 156, 1);
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+div.desktop-3 > div.study-info > div.text-box > p:last-child {
+    color: rgba(0, 0, 0, 1);
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 115%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 1em;
+}

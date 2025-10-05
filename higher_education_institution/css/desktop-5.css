@@ -1,0 +1,51 @@
+div.desktop-5 {
+    width: 1440px;
+    height: 295px;
+    background: rgba(147, 147, 147, 1);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: end;
+    gap: 4em;
+}
+
+div.desktop-5 > div {
+    margin-left: 162px;
+}
+
+div.useful-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+div.useful-links > a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    display: inline-block;
+    width: max-content;
+}
+
+div.useful-links > a:hover {
+    font-weight: bolder;
+    text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.3),
+                 1px 1px 2px rgba(255, 255, 255, 0.1);
+    transform: translateY(-0.5px);
+}
+
+div.footer-signature > p {
+    color: rgba(255, 255, 255, 1);
+    font-family: Roboto, sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 14px;
+}

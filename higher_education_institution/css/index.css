@@ -1,0 +1,91 @@
+div.desktop-1 {
+    width: 1440px;
+    height: 1024px;
+    background-image: url("../images/caleb-woods-RIcMwDLk1wo-unsplash\ 1.png");
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+div.menu-items {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-left: 122px;
+    margin-right: 122px;
+}
+
+div.menu-items > * {
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 1);
+    font-family: Lao MN, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+div.menu-items > a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-family: Abyssinica SIL, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+div.menu-items > form > input {
+    width: 55px;
+    height: 21px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    color: rgba(255, 255, 255, 1);
+    transition: all 0.3s ease;
+}
+
+div.menu-items > form > input::placeholder {
+    color: rgba(255, 255, 255, 1);
+    font-family: Abyssinica SIL, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+div.menu-items > form > input:focus {
+    width: 330px;
+    /* transform: translateX(-55px); */
+}
+
+div.menu-items > p {
+    margin-top: 9px;
+}
+
+div.menu-items > p::first-letter {
+    /* margin: auto; */
+    font-size: 33px;
+}
+
+div.menu-items > a:nth-child(5),
+div.menu-items > a:nth-child(3) {
+    margin-top: 6px;
+}
+
+div.menu-items > a:nth-child(6),
+div.menu-items > a:nth-child(2) {
+    margin-top: 3px;
+}
+
+div.menu-items > a:nth-child(2) {
+    border-bottom: 1px solid white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}

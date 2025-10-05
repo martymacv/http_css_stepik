@@ -1,0 +1,216 @@
+div.desktop-4 {
+    width: 1440px;
+    height: 729px;
+    background: rgba(233, 233, 233, 1);
+    display: grid;
+    grid-template-columns: 15fr 56fr 62fr;
+    grid-template-rows: 138px 1fr 40px;
+}
+
+div.desktop-4 > h1 {
+    grid-row: 1;
+    grid-column: 2;
+    align-self: center;
+    color: rgba(1, 60, 211, 1);
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 1.5em;
+}
+
+div.desktop-4 > div {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+div.desktop-4 > div.latest-news {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 495px;
+    grid-template-rows: 86px 250px auto auto auto;
+}
+
+div.desktop-4 > div.latest-news > img {
+    grid-row: 2;
+    width: 495px;
+    height: 250px;
+}
+
+div.latest-news > div.first-row {
+    /* Rectangle 15 */
+    
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+div.first-row > div.news-filter {
+    width: 220px;
+    height: 50px;
+    background: rgba(3, 0, 156, 0.06);
+    grid-column: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.first-row > div.news-filter > img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+div.first-row > div.news-filter > p {
+    color: rgba(3, 0, 156, 1);
+    font-family: Roboto, sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+div.latest-news > div.first-row > div.all-news {
+    width: 220px;
+    height: 50px;
+    grid-column: 2;
+    justify-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.first-row > div.all-news > a {
+    text-decoration: none;
+    color: rgba(166, 0, 0, 1);
+    font-family: Roboto, sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+}
+
+div.latest-news > p.title {
+    grid-row: 3;
+    align-self: center;
+    color: rgba(166, 0, 0, 1);
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+div.latest-news > p.news-text {
+    grid-row: 4;
+    align-self: self-start;
+    color: rgba(0, 0, 0, 1);
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+div.navi-bar {
+    grid-row: 5;
+    align-self: self-start;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+div.navi-bar > div:nth-child(-n+4) {
+    /* Ellipse 5 */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 1);
+}
+
+div.navi-bar > div:nth-child(1) {
+    background: rgba(166, 0, 0, 1);
+}
+
+div.navi-bar > div:nth-child(n+5):nth-child(-n+8) {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.desktop-4 > div.news-list {
+    grid-row: 2;
+    grid-column: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 86px 1fr 1fr 1fr 1fr;
+}
+
+div.empty-row {
+    grid-column: 1 / span 2;
+}
+div.news-list > div.news-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+div.news-list > div.news-box > div.border-top {
+    border-top: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+div.news-list > div.news-box:nth-child(odd) > div.border-top {
+    margin-right: 58px;
+}
+
+div.news-list > div.news-box > div.news-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+}
+
+div.news-box a.news-title {
+    text-decoration: none;
+    margin-right: 2em;
+    color: rgba(0, 0, 0, 1);
+    font-family: Roboto, sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+div.news-box div.news-header > p:first-child {
+    color: rgba(166, 0, 0, 1);
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+div.news-box div.news-header > p:last-child {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+}
